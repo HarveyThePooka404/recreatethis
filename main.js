@@ -15,7 +15,9 @@ function sortData (f) {
     const template = document.querySelector("template").content;
     const clone = template.cloneNode(true);
 
-    clone.
+    console.log(i.house_picture.guid);
+
+    clone.querySelector("img").src = i.house_picture.guid;
     clone.querySelector(".street_address").textContent = i.address;
     clone.querySelector(".city_address").textContent = i.city;
     clone.querySelector(".number_bed").textContent = i.bed;
