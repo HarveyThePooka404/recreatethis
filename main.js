@@ -2,7 +2,7 @@
 window.addEventListener("DOMContentLoaded", getData);
 
 function getData() {
-    fetch("http://owldesign.dk/wordpress/wp-json/wp/v2/house")
+    fetch("https://owldesign.dk/wordpress/wp-json/wp/v2/house")
         .then(e => e.json())
         .then(sortData);
 }
